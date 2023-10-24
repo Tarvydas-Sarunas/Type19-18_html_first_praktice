@@ -3,10 +3,23 @@ header {
   z-index: 10;
   top: 10px;
   left: 10px;
+  color: white;
 }
 
-.main-nav {
+.main-nav,
+.logo {
   display: none;
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+.unlisted {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-link {
+  padding: 0.5em 1em;
+  font-size: 18px;
 }
 .burger-menu-btn {
   background-color: #ffffff4c;
@@ -79,4 +92,23 @@ h1 {
 }
 .hero a {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav,
+  .logo {
+    display: block;
+  }
+  .burger-menu-btn {
+    display: none;
+  }
+}
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 28px 34px;
 }
