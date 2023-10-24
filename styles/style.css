@@ -16,10 +16,33 @@ header {
 .unlisted {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .nav-link {
   padding: 0.5em 1em;
   font-size: 18px;
+}
+.nav-list > li {
+  position: relative;
+}
+.sub-mebu {
+  display: none;
+  background-color: white;
+  color: gray;
+  padding: 10px;
+  position: absolute;
+  top: calc(100% + 25px);
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.sub-link {
+  padding: 0.3em 0;
+  display: block;
+  border-bottom: 1px solid gray;
+}
+.nav-btn {
+  margin-left: 1em;
 }
 .burger-menu-btn {
   background-color: #ffffff4c;
@@ -111,4 +134,18 @@ header {
   top: 0;
   left: 0;
   padding: 28px 34px;
+}
+.has-children:hover .sub-mebu {
+  display: block;
+}
+.has-children::before {
+  content: "\f078";
+  font-family: FontAwesome;
+  font-size: 14px;
+  margin-right: 8px;
+  display: inline-block;
+}
+.has-children:hover::before {
+  transform: rotateY(180deg);
+  translate: 4s ease;
 }
