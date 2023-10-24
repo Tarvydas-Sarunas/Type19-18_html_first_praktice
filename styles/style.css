@@ -1,0 +1,14 @@
+header {
+  background-color: gray;
+}
+
+.main-nav {
+  display: none;
+}
+.burger-menu-btn {
+  border: 1px solid #000;
+  background-color: #ffffff82;
+  font-size: 25px;
+  color: white;
+  padding: 0.3em 0.6em;
+}
