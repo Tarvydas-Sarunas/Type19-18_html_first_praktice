@@ -1,15 +1,21 @@
 header {
-  background-color: gray;
+  position: fixed;
+  z-index: 10;
+  top: 10px;
+  left: 10px;
 }
 
 .main-nav {
   display: none;
 }
 .burger-menu-btn {
-  background-color: #ffffff82;
+  background-color: #ffffff4c;
   font-size: 25px;
   color: white;
   padding: 0.3em 0.6em;
+  border: none;
+  top: 10px;
+  left: 10px;
 }
 .hero {
   background-color: gray;
@@ -25,9 +31,11 @@ header {
   padding-left: 44px;
   padding-right: 44px;
   position: relative;
+  /* paralax scroll effect */
+  background-attachment: fixed;
 }
 .hero::after {
-  content: "i am after";
+  content: "";
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
   /* top: 0;
